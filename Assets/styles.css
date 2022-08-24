@@ -1,0 +1,46 @@
+* {
+  font-size: 20px;
+}
+
+.city-input {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.past-inputs {
+  margin: 10px 0px;
+  border: 1px solid black;
+  text-align: center;
+  display: block;
+  margin-top: 25px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.top-search {
+  border-bottom: 1px solid black;
+}
+
+#submit-btn {
+  border-radius: 5px;
+}
+
+.round-border {
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.right-section {
+  border: 1px solid black;
+}
+
+.error-border {
+  border-color: red;
+}
+
+.normal-border {
+  border-color: black
+}
