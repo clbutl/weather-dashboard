@@ -77,31 +77,31 @@ function futureWeather(fAPI) {
   // 5 Day weather icons
   .then(function (data) {
     console.log(data.list[0])
-    var iconURL1 = "http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png"
+    var iconURL1 = "https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png"
     fetch(iconURL1)
     .then(function(){
       date1icon.setAttribute('src', "http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png")
     })
 
-    var iconURL2 = "http://openweathermap.org/img/w/" + data.list[1].weather[0].icon + ".png"
+    var iconURL2 = "https://openweathermap.org/img/w/" + data.list[1].weather[0].icon + ".png"
     fetch(iconURL2)
     .then(function(){
       date2icon.setAttribute('src', "http://openweathermap.org/img/w/" + data.list[1].weather[0].icon + ".png")
     })
 
-    var iconURL3 = "http://openweathermap.org/img/w/" + data.list[2].weather[0].icon + ".png"
+    var iconURL3 = "https://openweathermap.org/img/w/" + data.list[2].weather[0].icon + ".png"
     fetch(iconURL3)
     .then(function(){
       date3icon.setAttribute('src', "http://openweathermap.org/img/w/" + data.list[2].weather[0].icon + ".png")
     })
 
-    var iconURL4 = "http://openweathermap.org/img/w/" + data.list[3].weather[0].icon + ".png"
+    var iconURL4 = "https://openweathermap.org/img/w/" + data.list[3].weather[0].icon + ".png"
     fetch(iconURL4)
     .then(function(){
       date4icon.setAttribute('src', "http://openweathermap.org/img/w/" + data.list[3].weather[0].icon + ".png")
     })
 
-    var iconURL5 = "http://openweathermap.org/img/w/" + data.list[4].weather[0].icon + ".png"
+    var iconURL5 = "https://openweathermap.org/img/w/" + data.list[4].weather[0].icon + ".png"
     fetch(iconURL5)
     .then(function(){
       date5icon.setAttribute('src', "http://openweathermap.org/img/w/" + data.list[4].weather[0].icon + ".png")
@@ -298,7 +298,7 @@ function weatherInformation2(api, local) {
     fetch(iconUrl)
     .then(function () {
       currentCity.textContent = local + '(' + moment().format('M/D/YYYY') + ')'
-      weatherIcon.setAttribute('src', 'http://openweathermap.org/img/w/' + icon + '.png')
+      weatherIcon.setAttribute('src', 'https://openweathermap.org/img/w/' + icon + '.png')
     })  
     currentTemp.textContent = Math.round((1.8*((data.main.temp)-273) + 32)*10)/10 + '°F'
     currentWind.textContent = data.wind.speed + ' MPH'
